@@ -1,0 +1,30 @@
+# 编译产物
+main
+*.o
+*.out
+主要角色
+
+# 构建目录
+build/
+建造/
+
+# 日志
+logs/
+日志/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# 压缩包
+*.tgz
+*.zip
+
+# 冗余目录（用通配符避免中文编码问题）
+aa/
+epoll*
+
+# 系统文件
+.DS_Store
+Thumbs.db
