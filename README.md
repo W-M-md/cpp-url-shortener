@@ -14,15 +14,18 @@
 
 ## 📈 性能压测
 
-使用 `wrk -t 2 -c 10 -d 10s http://127.0.0.1:8888/` 压测，结果如下：
+使用 `wrk -t 2 -c 10 -d 10s http://127.0.0.1:8888/` 压测：
 
-```text
-Running 10s test @ http://127.0.0.1:8888/
-  2 threads and 10 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.01ms   14.13ms 210.45ms   95.29%
-    Req/Sec   789.56    346.05     1.68k    66.16%
-  15723 requests in 10.08s, 1.78MB read
-  Socket errors: connect 0, read 124, write 0, timeout 0
-Requests/sec:   1559.44
-Transfer/sec:    181.22KB
+\`\`\`text
+Requests/sec:   4622.08
+Latency:        1.54ms
+46282 requests in 10.01s
+Socket errors:  0
+\`\`\`
+
+| 指标 | 数值 |
+| :--- | :--- |
+| **QPS** | **4622** |
+| **平均延迟** | 1.54ms |
+| **总请求数** | 46282 |
+| **错误率** | 0% |
